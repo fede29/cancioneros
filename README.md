@@ -1,4 +1,3 @@
-# cancioneros
-<h1>Cancioneros</h1>
+# Cancioneros
 
 diferentes cancioneros con acordes para guitarra creados por mi
