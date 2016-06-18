@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{article}
+
+%Paquetes importados
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage[rgb,svgnames,table]{xcolor}
+\usepackage[chorded]{songs}
+
+%Paths
+\graphicspath{{imagenes/}}
+
+%Formato de las canciones
+\noversenumbers
+\newindex{titleidx}{cbtitle}
+\newauthorindex{authidx}{cbauth}
+\newscripindex{scripidx}{cbscrip}
+
+%Comandos propios
+\newcommand{\autor}{Federico Rodriguez Longhi}
+
+\begin{document}
+\title{Cancionero}
+\author{Federico Rodriguez Longhi}		
+\date{\today}
+
+\begin{titlepage}
+\centering
+\rule{\textwidth}{1pt}\par % Thick horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+\vspace{20pt}
+\Huge{Cancionero}\\
+\vfill
+\large{\autor}
+\end{titlepage}
+
+\begin{songs}{titleidx,authidx}
+\input{songs.sbd}
+\end{songs}
+
+\end{document}
