@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[11pt,a4paper]{article}
 
 %Paquetes importados
 \usepackage[utf8]{inputenc}
@@ -10,11 +10,15 @@
 %Paths
 \graphicspath{{imagenes/}}
 
-%Formato de las canciones
+%Songs package personalization 
 \noversenumbers
 \newindex{titleidx}{cbtitle}
 \newauthorindex{authidx}{cbauth}
 \newscripindex{scripidx}{cbscrip}
+
+\renewcommand{\chorusfont}{\it}
+\renewcommand{\printchord}{\sffamily}
+
 
 %Comandos propios
 \newcommand{\autor}{Federico Rodriguez Longhi}
@@ -40,7 +44,12 @@
 \end{titlepage}
 
 \begin{songs}{titleidx,authidx}
-\input{songs.sbd}
+	
+\input{rocknac.sbd}
+
+\input{cumbia.sbd}
+
+
 \end{songs}
 
 \end{document}
